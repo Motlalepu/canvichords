@@ -1,0 +1,27 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /community
+Allow: /portfolio/
+Allow: /gallery
+
+Disallow: /admin
+Disallow: /supabase-diag
+Disallow: /.env
+
+Crawl-delay: 1
+
+Sitemap: https://canvichords.com/sitemap.xml
