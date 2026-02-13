@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+build/
+
+# Environment variables
+.env
+
+# Media files (IMPORTANT)
+assets/
+media/
+uploads/
+public/media/
+public/uploads/
+
+# Large file types
+*.mp4
+*.mov
+*.avi
+*.mp3
+*.wav
+*.flac
+*.psd
+*.blend
+*.zip

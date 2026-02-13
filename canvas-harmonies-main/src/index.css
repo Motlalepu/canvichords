@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+@layer base {
+  :root {
+    /* Warm ivory gallery palette */
+    --background: 40 30% 97%;
+    --foreground: 30 10% 15%;
+
+    --card: 40 25% 95%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 40 30% 97%;
+    --popover-foreground: 30 10% 15%;
+
+    /* Terracotta accent */
+    --primary: 15 45% 55%;
+    --primary-foreground: 40 30% 97%;
+
+    --secondary: 35 20% 90%;
+    --secondary-foreground: 30 10% 25%;
+
+    --muted: 35 15% 92%;
+    --muted-foreground: 30 8% 45%;
+
+    --accent: 15 35% 60%;
+    --accent-foreground: 40 30% 97%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 40 30% 97%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 15 45% 55%;
+
+    --radius: 0.25rem;
+
+    /* Gallery-specific tokens */
+    --gallery-cream: 40 35% 96%;
+    --gallery-warm: 35 25% 93%;
+    --gallery-charcoal: 30 10% 20%;
+    --gallery-soft: 30 8% 50%;
+    --gallery-terracotta: 15 45% 55%;
+    --gallery-gold: 38 50% 65%;
+
+    /* Listening Room tokens (warm dark theme) */
+    --listening-room: 25 20% 10%;
+    --listening-foreground: 38 25% 90%;
+    --listening-card: 25 15% 15%;
+    --listening-border: 30 12% 22%;
+    --listening-muted: 30 10% 50%;
+    --listening-accent: 15 50% 60%;
+
+    --sidebar-background: 40 25% 95%;
+    --sidebar-foreground: 30 10% 25%;
+    --sidebar-primary: 15 45% 55%;
+    --sidebar-primary-foreground: 40 30% 97%;
+    --sidebar-accent: 35 20% 90%;
+    --sidebar-accent-foreground: 30 10% 25%;
+    --sidebar-border: 35 20% 88%;
+    --sidebar-ring: 15 45% 55%;
+  }
+
+  .dark {
+    --background: 30 15% 8%;
+    --foreground: 40 20% 92%;
+
+    --card: 30 12% 12%;
+    --card-foreground: 40 20% 92%;
+
+    --popover: 30 15% 8%;
+    --popover-foreground: 40 20% 92%;
+
+    --primary: 15 50% 60%;
+    --primary-foreground: 30 15% 8%;
+
+    --secondary: 30 10% 18%;
+    --secondary-foreground: 40 20% 85%;
+
+    --muted: 30 10% 18%;
+    --muted-foreground: 35 10% 55%;
+
+    --accent: 15 40% 55%;
+    --accent-foreground: 40 20% 92%;
+
+    --destructive: 0 55% 45%;
+    --destructive-foreground: 40 20% 92%;
+
+    --border: 30 10% 20%;
+    --input: 30 10% 20%;
+    --ring: 15 50% 60%;
+
+    --gallery-cream: 30 12% 12%;
+    --gallery-warm: 30 10% 15%;
+    --gallery-charcoal: 40 15% 85%;
+    --gallery-soft: 35 10% 60%;
+    --gallery-terracotta: 15 50% 60%;
+    --gallery-gold: 38 45% 60%;
+
+    /* Listening Room tokens (dark mode) */
+    --listening-room: 25 18% 8%;
+    --listening-foreground: 38 20% 88%;
+    --listening-card: 25 12% 12%;
+    --listening-border: 30 10% 18%;
+    --listening-muted: 30 8% 45%;
+    --listening-accent: 15 55% 58%;
+
+    --sidebar-background: 30 12% 10%;
+    --sidebar-foreground: 40 15% 85%;
+    --sidebar-primary: 15 50% 60%;
+    --sidebar-primary-foreground: 30 15% 8%;
+    --sidebar-accent: 30 10% 15%;
+    --sidebar-accent-foreground: 40 15% 85%;
+    --sidebar-border: 30 10% 18%;
+    --sidebar-ring: 15 50% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .gallery-container {
+    @apply max-w-7xl mx-auto px-6 md:px-12 lg:px-16;
+  }
+
+  .gallery-heading {
+    @apply font-serif font-light tracking-wide;
+  }
+
+  .gallery-text {
+    @apply font-sans font-light leading-relaxed;
+  }
+
+  .gallery-link {
+    @apply relative inline-block text-foreground transition-colors duration-300 hover:text-primary;
+  }
+
+  .gallery-link::after {
+    @apply content-[''] absolute left-0 bottom-0 w-full h-px bg-primary scale-x-0 origin-right transition-transform duration-300;
+  }
+
+  .gallery-link:hover::after {
+    @apply scale-x-100 origin-left;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
