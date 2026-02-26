@@ -6,15 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build": "next build"
-    "build:dev": "vite build --mode development",
+\    "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "scripts": {
   "dev": "vite",
   "build": "vite build",
-  "build": "next build"
   "preview": "vite preview"
 }
 
