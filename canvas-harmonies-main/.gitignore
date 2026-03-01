@@ -25,3 +25,4 @@ public/uploads/
 *.psd
 *.blend
 *.zip
+*.env 
