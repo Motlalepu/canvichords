@@ -86,7 +86,7 @@ export const artworks: Artwork[] = [
     description: "A portait of a lady and a puppy",
     artistStatement: "This was a paid commission piece for a client who wanted a portrait of their dog along with them.",
     image: artwork1,
-    soundscape: "/audio/Louie X- Cant escape (Lion Roar Riddim) Prod by Taf Lion [jbDJFzmlmXU].mp3",
+    soundscape: "https://res.cloudinary.com/dyvsfyaze/video/upload/v1770124116/Louie_X-_Cant_escape_Lion_Roar_Riddim_Prod_by_Taf_Lion_jbDJFzmlmXU_yg8eoh.mp3",
     dimensions: "120 × 180 cm",
     medium: "acyrlic on canvas",
     musicVideo: "https://res.cloudinary.com/dyvsfyaze/video/upload/v1770147780/10_Zambian_Songs_Written_By_Louie-X_pburwy.mp4"
@@ -139,7 +139,7 @@ export const artworks: Artwork[] = [
     description: "Hip Hop Leave Me Not is a vibrant depiction of the journey to knwoing oneself through the lens of hip hop culture.",
     artistStatement: "This piece reflects my personal journey and the influence of hip hop on my identity.",
     image: artwork4,
-    soundscape: "https://res.cloudinary.com/dyvsfyaze/video/upload/v1770124267/ytmp3free.cc_tarirai-remix-taf-lion-ft-samoraa-louie-x-vj-nakasa-prod-by-taf-lion-international-youtubemp3free.org_rlzkue.mp3",
+    soundscape: "https://res.cloudinary.com/dyvsfyaze/video/upload/v1770124214/ELEMENT_Ft_RA_I_Big_Belly_Bufu_Initialed_Endee_Swanker_Teyise_Slim_Dojeur_MC_LA__J4ypHifmhI_fmnmpv.mp3",
     dimensions: "80 × 100 cm",
     medium: "Digital",
     musicVideo: "https://res.cloudinary.com/dyvsfyaze/video/upload/v1770123523/videoplayback_3_rk4d5w.mp4"
