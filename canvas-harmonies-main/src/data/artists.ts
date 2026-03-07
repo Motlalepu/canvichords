@@ -179,7 +179,7 @@ export const artists: Artist[] = [
     trackTitle: "Black Pill",
     name: "Flawless Prodiigy",
     bio: "EDITED BY: Karabxw Blackid",
-    audio: "/audio/0.Black Pill (Prod. By Karibuchops).mp3",
+    audio: "https://res.cloudinary.com/dyvsfyaze/video/upload/v1772390367/0.Black_Pill_Prod._By_Karibuchops_vbgoyd.mp3",
     video: "https://res.cloudinary.com/dyvsfyaze/video/upload/v1770122988/0.Black_Pill_Prod._By_Karibuchops_dmrffr.mp4",
 
     links: {

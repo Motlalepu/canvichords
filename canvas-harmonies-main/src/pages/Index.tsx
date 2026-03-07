@@ -9,11 +9,11 @@ const Index = () => {
   const featuredArtworks = artworks.slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="bg-background">
       <Header />
       
       {/* HERO SECTION */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative flex items-center justify-center">
         {/* Dynamic background gradients */}
         <div className="absolute inset-0 bg-gradient-to-b from-gallery-cream via-background to-gallery-warm opacity-60" />
         
@@ -29,12 +29,12 @@ const Index = () => {
               <h1 
                 className="font-serif text-6xl md:text-7xl lg:text-9xl font-light tracking-widest text-foreground opacity-0 animate-fade-in leading-none"
               >
-                CANVICHORDS
+                Free Online Gallery for Artists
               </h1>
               <div className="flex items-center justify-center gap-2 opacity-0 animate-fade-in" style={{ animationDelay: "200ms" }}>
                 <div className="h-px w-8 bg-gradient-to-r from-transparent to-primary" />
                 <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-sans">
-                  Art & Sound Unified
+                  CANVICHORDS
                 </p>
                 <div className="h-px w-8 bg-gradient-to-l from-transparent to-primary" />
               </div>
@@ -45,8 +45,8 @@ const Index = () => {
               className="text-lg md:text-2xl text-foreground/70 font-sans font-light leading-relaxed max-w-3xl mx-auto opacity-0 animate-fade-in"
               style={{ animationDelay: "400ms" }}
             >
-              Where visual art meets ambient sound. 
-              <span className="block mt-2 text-muted-foreground">A sanctuary for slow exploration and profound contemplation.</span>
+              A platform for unknown artists to showcase art online free and gain exposure. 
+              <span className="block mt-2 text-muted-foreground">Upload artwork online and connect with art lovers in a supportive community.</span>
             </p>
 
             {/* CTA Buttons */}
@@ -101,6 +101,52 @@ const Index = () => {
         
       </section>
 
+      {/* HOW TO SHOWCASE ART ONLINE */}
+      <section className="py-24 md:py-32 bg-background">
+        <div className="gallery-container">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <h2 className="font-serif text-4xl md:text-5xl font-light tracking-wide text-foreground">
+              How to Showcase Art Online
+            </h2>
+            <div className="space-y-6">
+              <p className="text-lg text-foreground/70 font-sans font-light leading-relaxed">
+                Wondering where unknown artists can post art? Our free art promotion website provides a dedicated space for emerging creators to share their work with a global audience. Whether you're an artist looking for exposure or someone discovering new talent, this is your destination.
+              </p>
+              <p className="text-lg text-foreground/70 font-sans font-light leading-relaxed">
+                As a platform for African artists and creators worldwide, we focus on giving voice to underrepresented voices in the art world. Upload your artwork online today and join our community of passionate art enthusiasts.
+              </p>
+            </div>
+            <div className="pt-6">
+              <Link to="/gallery">
+                <Button variant="galleryPrimary" size="lg" className="gap-3 px-8">
+                  Start Showcasing Your Art
+                  <ArrowRight className="h-5 w-5" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ARTIST PROMOTION PLATFORM */}
+      <section className="py-24 md:py-32 bg-gallery-warm/20">
+        <div className="gallery-container">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <h2 className="font-serif text-4xl md:text-5xl font-light tracking-wide text-foreground">
+              Artist Promotion Platform
+            </h2>
+            <div className="space-y-6">
+              <p className="text-lg text-foreground/70 font-sans font-light leading-relaxed">
+                Sites that promote new artists like ours are essential for building careers in the creative field. Our share art online platform offers tools and visibility to help unknown artists gain the recognition they deserve.
+              </p>
+              <p className="text-lg text-foreground/70 font-sans font-light leading-relaxed">
+                We believe every artist deserves a chance to shine. That's why we've created this free online gallery for artists - a space where creativity meets opportunity, and emerging talent finds its audience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FEATURED ARTWORK SECTION */}
       <section className="py-24 md:py-32 bg-gradient-to-b from-background via-gallery-warm/20 to-background">
         <div className="gallery-container">
@@ -139,7 +185,7 @@ const Index = () => {
               <div className="relative overflow-hidden aspect-[4/3] rounded-lg border border-border/50">
                 <img
                   src={featuredArtwork.image}
-                  alt={featuredArtwork.title}
+                  alt={`${featuredArtwork.title} - showcase art online free by ${featuredArtwork.artist} on platform for unknown artists`}
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/5 via-transparent to-transparent group-hover:from-foreground/10 transition-colors duration-500" />
@@ -198,7 +244,7 @@ const Index = () => {
                     <div className="relative overflow-hidden aspect-[4/3] rounded-lg border border-border/50">
                       <img
                         src={artwork.image}
-                        alt={artwork.title}
+                        alt={`${artwork.title} - upload artwork online by ${artwork.artist} on free online gallery for artists`}
                         className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-colors duration-500" />
