@@ -1,0 +1,8 @@
+# Netlify build settings to handle the project being inside a subdirectory
+[build]
+  # Base directory where the project lives
+  base = "canvas-harmonies-main"
+  # Install + build will run in the base directory
+  command = "npm run build"
+  # Default Vite output directory
+  publish = "dist"
