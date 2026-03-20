@@ -1,0 +1,9 @@
+# Query: src="/src/main.tsx"
+# ContextLines: 1
+
+1 result - 1 file
+
+index.html:
+  44      <div id="root"></div>
+  45:     <script type="module" src="./src/main.tsx"></script>
+  46    </body>
