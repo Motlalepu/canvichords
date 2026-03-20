@@ -1,0 +1,4 @@
+project_id = "dprlovxbfyzxvbwutnmw"
+
+[functions.check-expiring-features]
+verify_jwt = false
